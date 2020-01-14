@@ -1,0 +1,123 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 1.8rem;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(25, 65, 209), rgb(177, 15, 101));
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-width: 300px;
+    width: 360px;
+    margin: 0;
+    border-right: 5px solid white;
+}
+
+#navbar header{
+    font-weight: thin;
+    font-size: 1.5rem;
+    padding: 10px;
+    background: rgba(36, 36, 25, 0.5);
+    text-align: center;
+}
+
+#navbar ul{
+    margin: 0;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 0px 20px 0px;
+}
+
+#navbar ul li{
+    width: 100%;
+    list-style: none;
+}
+
+#navbar ul li .nav-link{
+    margin: 0;
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#navbar ul li .nav-link:hover{
+    background: rgba(177, 15, 101, 0.6);
+    transition: 0.5s;
+}
+
+#main-doc{
+    padding: 20px;
+    padding-left: 400px;
+}
+
+code{
+    font-family: monospace;
+    width: 80%;
+    font-size: 1.9rem;
+    display: block;
+    line-height: 2;
+    padding: 30px;
+    background-color: rgba(36, 36, 25, 0.5);
+    border-radius: 5px;
+}
+
+#Reference a{
+    color: white;
+    padding: 5px;
+}
+
+#Reference a:hover{
+    background: rgb(177, 15, 101);
+    color:rgb(25, 65, 209);
+}
+
+@media(max-width: 950px){
+
+    body{
+        font-size: 1.4rem;
+        background: linear-gradient(110deg, rgb(25, 65, 209), rgb(177, 15, 101));
+    }
+    #navbar{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border: none;
+    }
+
+    
+    #navbar ul{
+        height: 30%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0px 0px 20px 0px;
+    }
+
+    #navbar ul li{
+        border-bottom: 2px solid white;
+    }
+
+    #main-doc{
+        padding: 20px;
+
+    }
+
+    code{
+        width: 95%;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
